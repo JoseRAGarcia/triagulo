@@ -4,14 +4,10 @@ public class Figura {
     private double lado1;
     private double lado2;
     private double lado3;
+    
+    //Utilizando o construtor sem passagem de parâmetros
 
-    public Figura(double lado1, double lado2, double lado3) {        
-        this.lado1 = lado1;
-        this.lado2 = lado2;
-        this.lado3 = lado3;
-    }
-
-    //Metodo não sendo utilizado
+    //Método que define se a igura é triânguo ou não
     public boolean isTriangulo(int qtdLados){
         if(qtdLados == 3){
             return true;
@@ -21,7 +17,7 @@ public class Figura {
         }
     }
 
-    //Metodo que define o tipo do triangulo
+    //Método que define o tipo de triângulo
     public String tipoTriangulo(){
 
         if (lado1 == lado2 && lado1 == lado3){
